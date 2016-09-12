@@ -14,7 +14,7 @@
  */
 let sayHello = function() {
 
-  // TODO: Write your code here!
+return 'Hello, World!';
 
 };
 
