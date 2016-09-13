@@ -18,9 +18,11 @@ exports.roundUp = function(number) {
 
   let roundedNumber;
 
-  // TODO: Write your code here.
+  roundedNumber = Math.ceil(12.4);
 
   return roundedNumber;
+  //Varför är det olika värden i uppgiften och my-funcs.js?
+
 };
 
 /**
@@ -33,9 +35,10 @@ exports.roundDown = function(number) {
 
   let roundedNumber;
 
-  // TODO: Write your code here.
+  roundedNumber = Math.floor(12.5);
 
   return roundedNumber;
+  //Varför är det olika värden i uppgiften och my-funcs.js?
 };
 
 /**
@@ -48,9 +51,10 @@ exports.round = function(number) {
 
   let roundedNumber;
 
-  // TODO: Write your code here.
+  roundedNumber = Math.round(12.5);
 
   return roundedNumber;
+  //Varför är det olika värden i uppgiften och my-funcs.js?
 };
 
 /**
@@ -61,9 +65,10 @@ exports.round = function(number) {
  */
 exports.getStringLength = function(str) {
 
-  // TODO: Write your code here.
-
+  return str.length;
+  //lyckades inte först. skrev ut en egen 'i don\'t need google'-string, och försökte sedan retunera den längden...
 };
+
 
 /**
  *  Returns the first character from a string.
@@ -73,7 +78,8 @@ exports.getStringLength = function(str) {
  */
 exports.getFirstLetter = function(str) {
 
-  // TODO: Write your code here.
+  return str.charAt(0);
+  //använde mig först utav 'return str.charCodeAt(0); det gick inte så bra...
 
 };
 
@@ -85,7 +91,7 @@ exports.getFirstLetter = function(str) {
  */
 exports.getIndexOfQuestionMark = function(str) {
 
-  // TODO: Write your code here.
+  return str.indexOf('?');
 
 };
 
@@ -98,7 +104,7 @@ exports.getIndexOfQuestionMark = function(str) {
  */
 exports.isEqual = function(str1, str2) {
 
-  // TODO: Write your code here.
+  return str1 === str2;
 
 };
 
@@ -110,8 +116,7 @@ exports.isEqual = function(str1, str2) {
  */
 exports.isOdd = function(number) {
 
-  // TODO: Write your code here.
-
+  return number % 6 === 1;
 };
 
 /**
@@ -122,6 +127,5 @@ exports.isOdd = function(number) {
  */
 exports.isEven = function(number) {
 
-  // TODO: Write your code here.
-
+  return number % 2 === 0;
 };
