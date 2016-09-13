@@ -17,5 +17,7 @@ exports.addNumbers = function() {
   let firstNumber = 12;
   let secondNumber = 30;
 
-  // TODO: Write your code here.
+  return 12 + 30;
+
+
 };
