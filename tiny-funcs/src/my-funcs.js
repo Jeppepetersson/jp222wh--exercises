@@ -18,7 +18,7 @@ exports.add = function() {
   let a = 12;
   let b = '12';
 
-  // TODO: Write your code here.
+  b = Number.parseInt(a);
 
   return a + b;
 };
@@ -33,7 +33,8 @@ exports.concat = function() {
   let time = 9;
   let weeks = 'weeks.';
 
-  // TODO: Write your code here.
+  return message + ' ' + time + ' ' + weeks;
+//gjorde först message + time + weeks; var ej medveten om att man kunde gör 'mellanslag' (' ')
 };
 
 /**
@@ -45,7 +46,7 @@ exports.round = function() {
   let firstNumber = 12.24;
   let secondNumber = 12.27;
 
-  // TODO: Write your code here.
+  return Math.round(firstNumber + secondNumber);
 };
 
 /**
