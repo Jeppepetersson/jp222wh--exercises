@@ -34,7 +34,7 @@ exports.concat = function() {
   let weeks = 'weeks.';
 
   return message + ' ' + time + ' ' + weeks;
-//gjorde först message + time + weeks; var ej medveten om att man kunde gör 'mellanslag' (' ')
+  //gjorde först message + time + weeks; var ej medveten om att man kunde gör 'mellanslag' (' ')
 };
 
 /**
@@ -58,7 +58,7 @@ exports.round = function() {
 exports.getOddNumbers = function(max) {
 
 
-//Fattar inte. för svårt??
+  //Fattar inte. för svårt??
 
 };
 
@@ -82,11 +82,11 @@ exports.greetings = function() {
   } else if (hour >= 12 && hour < 18) {
     message += 'afternoon!';
   } else if (hour >= 18 && hour < 24) {
-      message += 'evening!';
+    message += 'evening!';
   } else {
-      message += 'night!';
+    message += 'night!';
   }
- return message;
+  return message;
 };
 
 /**
@@ -97,7 +97,11 @@ exports.greetings = function() {
  */
 exports.replaceHyphensFor = function(str) {
 
-  // TODO: Write your code here.
+
+
+return result;
+
+
 };
 
 /**
