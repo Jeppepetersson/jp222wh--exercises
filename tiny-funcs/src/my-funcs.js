@@ -18,7 +18,7 @@ exports.add = function() {
   let a = 12;
   let b = '12';
 
-  b = Number.parseInt(a);
+  b = Number.parseInt(b);
 
   return a + b;
 };
@@ -57,7 +57,9 @@ exports.round = function() {
  */
 exports.getOddNumbers = function(max) {
 
-  // TODO: Write your code here.
+
+//Fattar inte. för svårt??
+
 };
 
 /**
@@ -73,7 +75,18 @@ exports.getOddNumbers = function(max) {
 exports.greetings = function() {
   let hour = new Date().getHours();
 
-  // TODO: Write your code here.
+  let message = 'Good ';
+
+  if (hour >= 8 && hour < 12) {
+    message += 'morning!';
+  } else if (hour >= 12 && hour < 18) {
+    message += 'afternoon!';
+  } else if (hour >= 18 && hour < 24) {
+      message += 'evening!';
+  } else {
+      message += 'night!';
+  }
+ return message;
 };
 
 /**
