@@ -18,10 +18,17 @@ let Shape = (function() {
        * @returns {String}
        */
       createRightTriangle: function(base) {
+
+        var triangle = '';
+
+        for (var row = '#'; row.length <= base; row += '#') {
+          triangle += row + '\n';
+        }
+
+        return triangle;
+        }
       }
 
     };
-  }
-());
 
 module.exports = Shape;
