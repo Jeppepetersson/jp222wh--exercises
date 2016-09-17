@@ -10,19 +10,18 @@
 
 let Shape = (function() {
 
-  return {
-    /**
-     * Returns a string representing a right triangle.
-     *
-     * @param {Number} base The number of characters in the triangle's base.
-     * @returns {String}
-     */
-    createRightTriangle: function(base) {
+    return {
+      /**
+       * Returns a string representing a right triangle.
+       *
+       * @param {Number} base The number of characters in the triangle's base.
+       * @returns {String}
+       */
+      createRightTriangle: function(base) {
+      }
 
-      // TODO: Write your code here.
-
-    }
-  };
-}());
+    };
+  }
+());
 
 module.exports = Shape;

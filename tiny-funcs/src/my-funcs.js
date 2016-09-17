@@ -57,11 +57,22 @@ exports.round = function() {
  */
 exports.getOddNumbers = function(max) {
 
+  var result = '';
 
-  //Fattar inte. för svårt??
+  for (var i = 1; i <= max; i += 1) {
 
+    if (i % 2 === 1) {
+
+      if (result.length > 0) {
+
+        result += ', ';
+      }
+    }
+    result += i;
+  }
+  return result;
 };
-
+//årekomemr till denna, visar inte vad jag vill...
 /**
  * Returns a string with a greeting message according to the time of day.
  *
@@ -97,11 +108,21 @@ exports.greetings = function() {
  */
 exports.replaceHyphensFor = function(str) {
 
+  var length = str.length;
 
+  var result = '';
 
-return result;
+  var i = str;
 
-
+  for (i = 0; i < length; i += 1) {
+    var char = str.charAt(i);
+    if (char === '-') {
+      result += ' ';
+    } else {
+      result += char;
+    }
+  }
+  return result;
 };
 
 /**
@@ -112,7 +133,21 @@ return result;
  */
 exports.replaceHyphensWhile = function(str) {
 
-  // TODO: Write your code here.
+  var length = str.length;
+
+  var result = '';
+
+  var i = 0;
+
+  while (i < length) {
+    var char = str.charAt(i);
+    if (char === '-') {
+      result += ' ';
+    } else {
+      result += char;
+    }
+  }
+  return result;
 };
 
 /**
