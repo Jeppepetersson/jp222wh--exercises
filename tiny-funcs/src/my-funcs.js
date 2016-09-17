@@ -146,8 +146,12 @@ exports.replaceHyphensWhile = function(str) {
     } else {
       result += char;
     }
+    i += 1;
   }
+  console.log(result);
+
   return result;
+
 };
 
 /**
@@ -157,5 +161,6 @@ exports.replaceHyphensWhile = function(str) {
  */
 exports.getNumberSequence = function() {
 
-  // TODO: Write your code here.
+  var result = '';
+
 };
