@@ -16,9 +16,20 @@
  */
 exports.tellType = function(data) {
 
-  let result = 'You sent me ';
+  var result = 'You sent me a';
+  var type = typeof data;
 
-  // TODO: Write your code here.
+  if (type === 'undefined'); {
+    result += 'n undefined value';
+  } else if (type === ' string.' ||
+             type === ' boolean.' ||
+             type === ' number.' ||
+             type === ' function.'); {
+    result += type;
+  } else if (type === 'n object.' ||
+             type === 'n array.'); {
+    result += type;
+  }
 
   return result;
 };
