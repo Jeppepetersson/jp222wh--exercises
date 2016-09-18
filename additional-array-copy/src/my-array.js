@@ -19,6 +19,20 @@
  */
 module.exports.pushToArray = function(source, number) {
 
-  // TODO: Write your code here.
+  let copy;
+
+  if(!Array.isArray(source) || typeof number !== 'number'){
+    throw new TypeError('Must be an array and a number!');
+  }
+
+  if(source.length === 0) {
+    throw new TypeError('the array must have a value!');
+  }
+
+  copy = source.slice();
+  copy.push(number);
+
+  return copy;
+  //Fick delvis rätt på min egna kod, men kunde inte klura ut varför inte allt blev godkännt, så kollade på lösningsförslag och en lampa tändes!
 
 };
