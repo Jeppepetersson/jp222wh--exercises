@@ -21,9 +21,25 @@ let MyArray = (function() {
      */
     sort: function(source) {
 
-      // TODO: Write your code here.
+      if (!Array.isArray(source)){
+        throw new TypeError('source doesn\'t refer ta an array');
+      }
 
-    },
+      if (source.length === 0) {
+        throw new error('The array is empty!');
+      }
+
+      let copy;
+
+      copy = Array.slice(source);
+
+      copy.sort((a, b) => a - b);{
+        return copy;
+
+      }
+      }
+
+    };
 
     /**
      * Returns a numerically sorted copy (descending order) of an array.
@@ -34,11 +50,23 @@ let MyArray = (function() {
      */
     sortDescending: function(source) {
 
-      // TODO: Write your code here.
-
+    if (!Array.isArray(source)){
+      throw new TypeError('source doesn\'t refer ta an array');
     }
 
-  };
+    if (source.length === 0) {
+      throw new error('The array is empty!');
+    }
+
+    let copy;
+
+    copy = Array.slice(source);
+
+    copy.sort((a, b) <= b - a);{
+      return copy;
+    }
+
+  }
 })();
 
 module.exports = MyArray;
