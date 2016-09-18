@@ -19,7 +19,15 @@ let Team = (function() {
    */
   let sortByPoints = function(teams) {
 
-    // TODO: Write your code here!
+    if(!Array.isArray(teams)){
+      throw new TypeError('does not refer to an array!');
+    }
+
+    return teams.sort(function(a, b){
+      return b.points > a.points;
+    });
+
+    console.log(point);
 
   };
 
