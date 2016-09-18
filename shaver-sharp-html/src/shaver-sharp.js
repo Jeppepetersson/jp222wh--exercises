@@ -8,7 +8,7 @@
 
 'use strict';
 
-let ShaverSharp = {
+var ShaverSharp = {
 
   /**
    * Creates the specified starting tag.
@@ -18,7 +18,9 @@ let ShaverSharp = {
    */
   createBeginTag: function(tagName) {
 
-    // TODO: Write this code first
+    console.log('<' + tagName + '>');
+
+    return '<' + tagName + '>';
 
   },
 
@@ -30,7 +32,7 @@ let ShaverSharp = {
    */
   createEndTag: function(tagName) {
 
-    // TODO: Write this code second
+    return '</' + tagName + '>';
 
   },
 
@@ -45,8 +47,17 @@ let ShaverSharp = {
 
     // innerHTML = typeof innerHTML !== 'undefined' ? innerHTML :  ''; // Node.js 4.5.0 LTS lacks support of default parameters in ES6
 
-    // TODO: Write this code third
+    let result = shaversharp.createBeginTag(tagName);
 
+    if (innerHTML) {
+      result += innerHTML = '';
+      result += ShaverSharp.createBeginTag(tagName);
+    } else {
+      result = result.substring(0, result.length - 1) + '/>';
+    }
+
+
+    return '<' + tagName + '>';
   },
 
   /**
